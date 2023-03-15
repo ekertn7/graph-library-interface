@@ -1,0 +1,101 @@
+:root {
+	--window-color: #eeeeee;
+	--window-border-color: #adadad;
+
+	--drag-drop-color: #e7e7e7;
+}
+
+#upload {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.upload-window {
+	display: block;
+	min-width: 33vw;
+	max-width: 77vw;
+	background: var(--window-color);
+	border-radius: 10px;
+	padding: 30px;
+	text-align: center;
+}
+
+.upload-buttons {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	align-content: center;
+	margin: 20px auto;
+	gap: 20px;
+}
+
+#upload-drag-drop--label {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	align-content: center;
+	background: var(--drag-drop-color);
+	margin-top: 30px;
+	padding: 20px;
+	border: 1px dashed var(--window-border-color);
+	border-radius: 14px;
+}
+
+#upload-drag-drop--label, #upload-drag-drop--label * {
+	cursor: pointer;
+}
+
+#upload-drag-drop--label > div {
+	height: 105px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+#upload-drag-drop--label > div > img {
+	width: 150px;
+	height: 105px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+.upload-drag-drop--img-center {
+	left: calc(50% - 150px/2);
+	z-index: 4;
+	transition-duration: .2s;
+	transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.upload-drag-drop--img-left {
+	/*          начальное положение   */
+	/*          |              offset */
+	/*          |              |      */
+	left: calc((50% - 150px) + 69px);
+	z-index: 3;
+	transition-duration: .2s;
+	transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.upload-drag-drop--img-right {
+	/*          начальное положение   */
+	/*          |      offset         */
+	/*          |      |              */
+	left: calc((50%) - 69px);
+	z-index: 2;
+	transition-duration: .2s;
+	transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+#upload-drag-drop--label:hover .upload-drag-drop--img-center {
+	transform: scale(1.1);
+}
+
+#upload-drag-drop--label:hover .upload-drag-drop--img-left {
+	left: calc((50% - 150px) - 53px);
+}
+
+#upload-drag-drop--label:hover .upload-drag-drop--img-right {
+	left: calc((50%) + 53px);
+}

@@ -1,0 +1,164 @@
+:root {
+	--font-color: #444444;
+	--background-color: #fafafa;
+
+	--main-color: #e2f6e2;
+	--window-color: #d3f1d3;
+
+	--button-apply-color: #00c568;
+	--button-apply-hover-color: #00b460;
+	--button-apply-active-color: #00a156;
+	--button-apply-font-color: #ffffff;
+
+	--button-decline-color: #e34444;
+	--button-decline-hover-color: #cb2f2f;
+	--button-decline-active-color: #b32222;
+	--button-decline-font-color: #ffffff;
+
+	--button-inactive-color: #eeeeee;
+	--button-inactive-font-color: #bababa;
+}
+
+/* ELEMENTS */
+
+* {
+	outline: 0;
+	cursor: default;
+	border-radius: 0;
+	margin: 0;
+	padding: 0;
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	color: var(--font-color);
+}
+
+body {
+	background-color: transparent;
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+	width: 100vw;
+	height: 100vh;
+}
+
+body > div {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+p {
+	line-height: 1.5;
+}
+
+a, a:hover, a:active, a:visited {
+	text-decoration: none;
+}
+
+a, button, input[type=file], input[type=checkbox], input[type=radio], button * {
+	cursor: pointer;
+}
+
+input[type=name], input[type=phone], input[type=text], textarea {
+	cursor: text;
+}
+
+h1 {
+	font-size: 36px;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 26px;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+textarea {
+	resize: none;
+}
+
+/* BUTTONS */
+
+button {
+	display: block;
+	border-radius: 5px;
+	text-decoration: none;
+	border: none;
+	position: relative;
+	font-weight: bold;
+}
+
+.button-apply {
+	padding: 10px 20px;
+	/* margin: 20px auto; */
+	background: var(--button-apply-color);
+	color: var(--button-apply-font-color);
+}
+.button-apply:hover {
+	background: var(--button-apply-hover-color);
+}
+.button-apply:active {
+	background: var(--button-apply-active-color);
+}
+
+.button-apply-arrow {
+	padding: 10px 35px 10px 20px;
+	background: var(--button-apply-color);
+	color: var(--button-apply-font-color);
+}
+.button-apply-arrow::after {
+	content: "";
+	position: absolute;
+	right: 12px;
+	top: calc(50% - 10px);
+	width: 8px;
+	height: 20px;
+	background: url("../img/buttons/button-apply-arrow.svg") no-repeat;
+	background-size: 100% 100%;
+	transition-duration: .2s;
+	transition-timing-function: ease;
+}
+.button-apply-arrow:hover {
+	background: var(--button-apply-hover-color);
+}
+.button-apply-arrow:hover::after {
+	transform: translateX(-3px);
+}
+.button-apply-arrow:active {
+	background: var(--button-apply-active-color);
+}
+.button-apply-arrow:active::after {
+	transform: translateX(-5px);
+}
+
+.button-decline {
+	padding: 10px 20px;
+	background: var(--button-decline-color);
+	color: var(--button-decline-font-color);
+}
+.button-decline:hover {
+	background: var(--button-decline-hover-color);
+}
+.button-decline:active {
+	background: var(--button-decline-active-color);
+}
+
+.button-inactive {
+	padding: 10px 20px;
+	cursor: default;
+	background: var(--button-inactive-color);
+	color: var(--button-inactive-font-color);
+	font-weight: bold;
+}
+
+/* CONDITIONS */
+
+.invisible {
+	display: none;
+}

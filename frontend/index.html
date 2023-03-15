@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVA GM Visualise</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/pages/upload.css">
+    <link rel="stylesheet" type="text/css" href="css/pages/table.css">
+    <link rel="stylesheet" type="text/css" href="css/pages/workspace.css">
+</head>
+
+<body>
+    <div id="upload">
+        <div class="upload-window">
+            <h1 id="upload-window--header">Загрузите файл для анализа</h1>
+            <input id="upload-drag-drop--input" class="invisible" type="file" accept=".txt,.csv,.xls,.xlsx">
+            <label id="upload-drag-drop--label" for="upload-drag-drop--input">
+                <div>
+                    <img class="upload-drag-drop--img-left" src="img/files/file-left.svg">
+                    <img class="upload-drag-drop--img-center" src="img/files/file-center.svg">
+                    <img class="upload-drag-drop--img-right" src="img/files/file-right.svg">
+                </div>
+                <pre id="upload-drag-drop--text">Выберите файл для анализа<br>или перенесите его в данное окно</pre>
+            </label>
+        </div>
+        <div class="upload-buttons">
+            <button id="upload-window--button-apply" class="button-inactive">Загрузить файл</button>
+        </div>
+    </div>
+
+    <div id="table"></div>
+
+    <div id="workspace"></div>
+</body>
+</html>

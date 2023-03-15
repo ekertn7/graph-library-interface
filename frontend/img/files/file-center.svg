@@ -1,0 +1,30 @@
+<svg width="200" height="140" viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="4" y="4" width="192" height="132" rx="21" fill="url(#paint0_linear_1411_92)"/>
+<rect x="15" y="31" width="30" height="20" rx="2" fill="white" fill-opacity="0.6"/>
+<rect x="50" y="31" width="30" height="20" rx="2" fill="white" fill-opacity="0.6"/>
+<rect x="85" y="31" width="30" height="20" rx="2" fill="white" fill-opacity="0.6"/>
+<rect x="38" y="15" width="125" height="6" rx="2" fill="#FAFAFA"/>
+<rect x="120" y="31" width="30" height="20" rx="2" fill="#FAFAFA" fill-opacity="0.9"/>
+<rect x="155" y="31" width="30" height="20" rx="2" fill="white" fill-opacity="0.6"/>
+<rect x="15" y="56" width="30" height="20" rx="2" fill="white" fill-opacity="0.6"/>
+<rect x="50" y="56" width="30" height="20" rx="2" fill="#EAF990"/>
+<rect x="85" y="56" width="30" height="20" rx="2" fill="white" fill-opacity="0.6"/>
+<rect x="120" y="56" width="30" height="20" rx="2" fill="white" fill-opacity="0.6"/>
+<rect x="155" y="56" width="30" height="20" rx="2" fill="white" fill-opacity="0.6"/>
+<rect x="15" y="81" width="30" height="20" rx="2" fill="#FAFAFA" fill-opacity="0.9"/>
+<rect x="50" y="81" width="30" height="20" rx="2" fill="white" fill-opacity="0.6"/>
+<rect x="85" y="81" width="30" height="20" rx="2" fill="#FAFAFA" fill-opacity="0.9"/>
+<rect x="120" y="81" width="30" height="20" rx="2" fill="#8DF5FC"/>
+<rect x="155" y="81" width="30" height="20" rx="2" fill="white" fill-opacity="0.6"/>
+<path d="M15 108C15 106.895 15.8954 106 17 106H43C44.1046 106 45 106.895 45 108V124C45 125.105 44.1046 126 43 126H26C19.9249 126 15 121.075 15 115V108Z" fill="white" fill-opacity="0.6"/>
+<rect x="50" y="106" width="30" height="20" rx="2" fill="white" fill-opacity="0.6"/>
+<rect x="85" y="106" width="30" height="20" rx="2" fill="white" fill-opacity="0.6"/>
+<rect x="120" y="106" width="30" height="20" rx="2" fill="white" fill-opacity="0.6"/>
+<path d="M155 108C155 106.895 155.895 106 157 106H183C184.105 106 185 106.895 185 108V115C185 121.075 180.075 126 174 126H157C155.895 126 155 125.105 155 124V108Z" fill="white" fill-opacity="0.6"/>
+<defs>
+<linearGradient id="paint0_linear_1411_92" x1="100" y1="4" x2="100" y2="136" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00B862"/>
+<stop offset="1" stop-color="#008C4B"/>
+</linearGradient>
+</defs>
+</svg>
